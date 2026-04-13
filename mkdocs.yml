@@ -2,3 +2,20 @@ site_name: litePlay.js
 site_url: https://g-ubimus.github.io/litePlay_docs/
 theme:
   name: material
+  palette:
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: green
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
