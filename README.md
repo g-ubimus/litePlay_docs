@@ -24,7 +24,7 @@ source venv/bin/activate
 4. Install material:
 
 ```
-pip install mkdocs-material
+pip install -r requirements.txt
 ```
 
 5. Build the docs:
