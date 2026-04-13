@@ -19,3 +19,30 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Portuguese 
+      link: /pt/
+      lang: pt-BR 
+
+plugins:
+  - search
+  - i18n:
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+        - locale: pt
+          name: Português
+          build: true
+
+nav:
+  - Home: index.md
+  - play(): play.md
+  - eventList class: eventList.md
+  - instrument(): instruments.md

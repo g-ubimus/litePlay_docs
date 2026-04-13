@@ -8,13 +8,13 @@ composition (or both). This tutorial is focused on such use cases.
 ## How to use it?
 There are several ways to use litePlay.js, choose what you want to try first:
 
-* [litePlay.js online editor](#litePlay.js-online-editor)
+* [litePlay.js online editor](#liteplay-online-editor)
 
 * [Other online environments](#other-online-environments)
 
 * [Load it to your website](#load-it-to-your-website)
 
-### litePlay.js online editor
+### litePlay online editor
 [litePlay online editor](https://g-ubimus.github.io/litePlay.js/): a simple
 editor designed to test experimental features with REPL, where litePlay's
 functions can be called without the prefix. It is able to save code and 
