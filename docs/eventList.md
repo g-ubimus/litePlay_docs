@@ -33,15 +33,31 @@ themselves lists (of attributes). One fundamental aspect is that the event list
 passed to `play()` replaces the existing events (if any have been added) in the
 object.
 
-## Adding, removing and inserting events to the list
-- `eventList.add(event, ...)` events to the end of the list. This can
-take any number of events (as `create()` did).
+## eventList.add()
 
-- `eventList.remove(index)` remove an event with a given `index`
-from the list, or the last event (if no `index` is given).
+```
+eventList.add(event, ...)
+```
 
-- `eventList.insert(pos, event, ...)` insert one or more events into
-the object, after position `pos`.
+events to the end of the list. This can take any number of events (as
+`create()` did).
+
+## eventList.remove()
+
+```
+eventList.remove(index)
+```
+
+remove an event with a given `index` from the list, or the last event (if no
+`index` is given).
+
+## eventList.insert()
+
+```
+eventList.insert(pos, event, ...)
+```
+
+insert one or more events into the object, after position `pos`.
 
 ```
 sequence.add(event, [C4,0.9,3]);    
@@ -49,7 +65,8 @@ sequence.remove(0);
 sequence.insert(1, [D4, 0.8, 0.5]);
 ```
 
-## Repeating all events 
+## eventList.repeat()
+
 We can also repeat an `eventList` any number of `times`, `when` seconds later
 from the action,
 
