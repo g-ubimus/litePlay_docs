@@ -1,5 +1,5 @@
 # litePlay.js docs
-litePlay.js are build using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+litePlay.js docs are build using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
 Steps to build it:
 
