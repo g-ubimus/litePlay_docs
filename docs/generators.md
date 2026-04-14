@@ -6,7 +6,7 @@ from which random values will be drawn.
 ## Pitch 
 Pitch can be randomized in three ranges:
 
-```
+```javascript
 lowPitch = pitch between C0 and C3
 midPitch = pitch between C3 and C5
 highPitch = pitch between C5 and C7
@@ -14,14 +14,14 @@ highPitch = pitch between C5 and C7
 
 For example:
 
-```
+```javascript
 piano.play([highPitch, 1, 0, 1])
 ```
 
 ## Loudness
 Generators for loudness can be accessed from three tokens:
 
-```
+```javascript
 soft = amplitude between 0.01 and 0.1
 midlevel = amplitude between 0.1 and 0.4
 loud = amplitude between 0.4 and 0.9
@@ -29,7 +29,7 @@ loud = amplitude between 0.4 and 0.9
 
 An example, in context:
 
-```
+```javascript
 drums2.play([vibraslap, loud, 0, 1])
 ```
 
@@ -37,7 +37,7 @@ drums2.play([vibraslap, loud, 0, 1])
 Generators for scheduling the start time in the future can be accessed from
 three tokens:
 
-```
+```javascript
 now = start between 0.01 and 0.5 seconds
 soon = start between 0.5 and 4 secons
 later = start between 4 and 8 seconds
@@ -45,14 +45,14 @@ later = start between 4 and 8 seconds
 
 For example:
 
-```
+```javascript
 piano.play([Bb4, 0.5, later, 1])
 ```
 
 ## Durations
 Durations can be randomized with these three tokens:
 
-```
+```javascript
 shortDur = durations between 0.05 and 0.2 seconds
 midDur = durations between 0.2 and 2 secons
 longDur = durations between 2 and 5 seconds
@@ -60,21 +60,21 @@ longDur = durations between 2 and 5 seconds
 
 For example:
 
-```
+```javascript
 trombone.play([Eb2, 1, 0, longDur])
 ```
 
 ## Drums family
 Two generators can be used to get different types of drums for the _what_ attribute:
 
-```
+```javascript
 membranophone = instruments that have a vibrating membrane 
 idiophone = everything else
 ```
 
 For example:
 
-```
+```javascript
 drums.play(membranophone)
 drums.play([idiophone, .5, later, 1])
 ```
@@ -83,7 +83,7 @@ drums.play([idiophone, .5, later, 1])
 Additionally, random instruments that belong to a same group can be called in
 the last attribute of `play()`:
 
-```
+```javascript
 onStruck
 onSus
 onPluck
@@ -102,18 +102,18 @@ onDrums
 
 For context, an example combining everything we learned here:
 
-```
+```javascript
 play([midPitch, soft, now, shortDur, onPerc])
 ```
 
 Warning: notice that _sustained_ sounds will play forever if not called with an specified duration!
 
-```
+```javascript
 play(onSus)
 ```
 
 Finally, any instrument can be randomly called with:
 
-```
+```javascript
 onSomething
 ```

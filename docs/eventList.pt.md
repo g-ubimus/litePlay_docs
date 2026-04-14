@@ -4,19 +4,19 @@ Listas de eventos podem ser transformadas em um objeto JS que pode ser manipulad
 ## eventList.create()
 É usado para criar um evento, geralmente atribuído a uma variável:
 
-```javascript
+```javascriptjavascript
 let lista = eventList.create([C3, 0.1, 0], [C4, 0.2, 1], [C5, 0.4, 2]);
 ```
 
 então podemos tocá-lo repetidamente (chamando `toque()` nele):
 
-```javascript
+```javascriptjavascript
 lista.toque();
 ```
 
 O `toque()` pode receber dois parâmetros opcionais,
 
-```javascript
+```javascriptjavascript
 eventList.toque(quanto, eventos);
 ```
 
@@ -24,7 +24,7 @@ o primeiro é um _quando_ para a lista completa, obtido a partir do
 momento da ação, para que possamos posicionar a performance no futuro. O
 segundo é uma lista de eventos, basicamente uma lista JS de listas, como:
 
-```
+```javascript
 [[C3, 0.1, 0, 1], [C4, 0.2, 1, 1], [C5, 0.4, 2, 1]]
 ```
 
@@ -36,7 +36,7 @@ adicionado) no objeto.
 
 ## eventList.add()
 
-```
+```javascript
 eventList.add(event, ...)
 ```
 
@@ -44,7 +44,7 @@ Adiciona eventos ao final da lista. Pode receber qualquer número de eventos (as
 
 ## eventList.remove() 
 
-```
+```javascript
 eventList.remove(índice)
 ```
 
@@ -53,13 +53,13 @@ nenhum `índice` for fornecido).
 
 ## eventList.insert() 
 
-```
+```javascript
 eventList.insert(posição, event, ...)
 ```
 
 insere um ou mais eventos no objeto, após o índice `posição`.
 
-```
+```javascript
 lista.add(event, [C4,0.9,3]);    
 lista.remove(0);    
 lista.insert(1, [D4, 0.8, 0.5]);
@@ -70,7 +70,7 @@ lista.insert(1, [D4, 0.8, 0.5]);
 Também podemos repetir um `eventList` qualquer número de `vezes`, em `quando`
 segundos após a ação,
 
-```
+```javascript
 lista.repeat(vezes, quando);
 ```
 
@@ -80,7 +80,7 @@ outros eventos. Por exemplo, este código toca uma lista de eventos, adiciona
 dois eventos a ela e, em seguida, agenda a repetição dessa sequência mais longa
 por três vezes após o término da primeira ação `toque()`,
 
-```
+```javascript
 let lista = eventList.create([C4, 0.1, 0, 1],
                               [E4, 0.2, 1, 1], 
                               [G4, 0.4, 2, 1]);

@@ -4,19 +4,19 @@ Lists of events can be made into a JS object that can be manipulated.
 ## eventList.create()
 Is used to create an event, usually assigned to a variable:
 
-```
+```javascript
 let sequence = eventList.create([C3, 0.1, 0], [C4, 0.2, 1], [C5, 0.4, 2]);
 ```
 
 then we can play it repeatedly (by calling `play()` on it):
 
-```
+```javascript
 sequence.play();
 ```
 
 The `play()` can take two optional parameters,
 
-```
+```javascript
 eventList.play(when, events);
 ```
 
@@ -24,7 +24,7 @@ the first one is a _when_ for the complete list, taken from the time of the
 action, so we can place the performance in the future. The second is a list of
 events, basically a JS list of lists, such as:
 
-```
+```javascript
 [[C3, 0.1, 0, 1], [C4, 0.2, 1, 1], [C5, 0.4, 2, 1]]
 ```
 
@@ -35,7 +35,7 @@ object.
 
 ## eventList.add()
 
-```
+```javascript
 eventList.add(event, ...)
 ```
 
@@ -44,7 +44,7 @@ events to the end of the list. This can take any number of events (as
 
 ## eventList.remove()
 
-```
+```javascript
 eventList.remove(index)
 ```
 
@@ -53,13 +53,13 @@ remove an event with a given `index` from the list, or the last event (if no
 
 ## eventList.insert()
 
-```
+```javascript
 eventList.insert(pos, event, ...)
 ```
 
 insert one or more events into the object, after position `pos`.
 
-```
+```javascript
 sequence.add(event, [C4,0.9,3]);    
 sequence.remove(0);    
 sequence.insert(1, [D4, 0.8, 0.5]);
@@ -70,7 +70,7 @@ sequence.insert(1, [D4, 0.8, 0.5]);
 We can also repeat an `eventList` any number of `times`, `when` seconds later
 from the action,
 
-```
+```javascript
 sequence.repeat(times, when);
 ```
 
@@ -80,7 +80,7 @@ this code plays an event list, adds two events to it and then schedule to
 repeat that longer sequence for three times after the end of the first `play()`
 action,
 
-```
+```javascript
   let sequence = eventList.create([C4, 0.1, 0, 1],
                                 [E4, 0.2, 1, 1], 
                                 [G4, 0.4, 2, 1]);

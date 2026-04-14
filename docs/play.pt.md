@@ -3,7 +3,7 @@
 No núcleo do litePlay.js temos o `play()`. Ele pode ser simplesmente executado
 como
 
-```
+```javascript
 toque();
 ```
 
@@ -12,7 +12,7 @@ digitadas diretamente em um console REPL interativo ou adicionadas ao script.
 
 Podemos fazer alterações neste som definindo o instrumento padrão que o reproduz,
 
-```
+```javascript
 instrumento(órgão);
 ```
 
@@ -22,7 +22,7 @@ introdução aos instrumentos é dada no final do tutorial.
 Também podemos dizer o que tocar. Se o som for de um instrumento afinado
 (pitch), podemos pedir para tocar uma determinada nota,
 
-```
+```javascript
 toque(E4);
 ```
 
@@ -34,7 +34,7 @@ alguns possam decair em intensidade ao longo do tempo).
 Acidentes são representados pela letra minúscula `s` para _sustenidos_ (sharp)
 e `b` para notas _bemóis_ (flat):
 
-```
+```javascript
 toque(Eb4);
 toque(Fs4);
 ```
@@ -65,19 +65,19 @@ como _what_, _howLoud_, _when_ e _howLong_.
 Os eventos são passados usando uma lista JS (ou array) com atributos na ordem
 listada anteriormente:
 
-```
+```javascript
 [o quê, quão forte, quando, quanto tempo, em algo]
 ```
 
 Por exemplo,
 
-```
+```javascript
 toque([C4, 0.5, 0, 2, violino])
 ```
 
 A ação `toque()` pode receber vários eventos como argumentos, como
 
-```
+```javascript
 toque([C4, 0.1, 0, 3], [E4, 0.2, 0.5, 0.5], [G4, 0.4, 2, 0.1])
 ```
 
@@ -88,7 +88,7 @@ certa maneira.
 
 ### Uma lista simples de _what_ (o que)
 
-```
+```javascript
 toque(C3, C4, C5);
 ```
 
@@ -98,7 +98,7 @@ sequência.
 
 ### Uma lista de eventos incompletos
 
-```
+```javascript
 toque([C3], [C4], [C5]);
 ```
 
@@ -107,7 +107,7 @@ lista. Ouvimos os sons começando ao mesmo tempo, misturados.
 
 ### Uma lista de eventos com atributos _when_ definidos explicitamente
 
-```
+```javascript
 toque([C3, 0.1, 0], [C4, 0.2, 1], [C5, 0.4, 2]);
 ```
 

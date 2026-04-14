@@ -2,7 +2,7 @@
 
 At the core of litePlay.js we have `play()`. This can be simply run as
 
-```
+```javascript
 play();
 ```
 
@@ -11,7 +11,7 @@ to play a sound, and `lp.stop()` to stop it. These code lines can be typed direc
 We can make changes to this sound by setting
 the default instrument playing it,
 
-```
+```javascript
 instrument(organ);
 ```
 
@@ -21,7 +21,7 @@ organ. An introduction to instruments is given at the end of the tutorial.
 We can also tell what to play. If the sound is from a pitched instrument,
 we can ask it to play a given pitch,
 
-```
+```javascript
 play(E4);
 ```
 
@@ -66,20 +66,20 @@ well as _what_, _howLoud_,_when_, and _howLong_.
 Events are passed using a JS list (or array) with attributes in the order
 listed earlier:
 
-```
+```javascript
 [what,  howLoud, when, howLong, onSomething]
 ```
 
 For example,
 
-```
+```javascript
 play([C4, 0.5, 0, 2, violin])
 ```
 
 The top-level `play()` action can take several events as arguments, such
 as
 
-```
+```javascript
 play([C4, 0.1, 0, 3], [E4, 0.2, 0.5, 0.5], [G4, 0.4, 2, 0.1])
 ```
 
@@ -90,7 +90,7 @@ certain way.
 
 ### A simple list of _what_
 
-```
+```javascript
 play(C3, C4, C5);
 ```
 
@@ -99,7 +99,7 @@ _onSomething_ being played (set to 1 sec). So we hear the sounds in sequence.
 
 ### A list of incomplete events
 
-```
+```javascript
 play([C3], [C4], [C5]);
 ```
 
@@ -108,7 +108,7 @@ list. We hear the sounds starting at the same time, mixed up.
 
 ### A list of events with _when_ attributes explicitly defined
 
-```
+```javascript
 play([C3, 0.1, 0], [C4, 0.2, 1], [C5, 0.4, 2]);
 ```
 

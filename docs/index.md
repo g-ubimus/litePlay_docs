@@ -52,14 +52,14 @@ Not all environments fulfill these. The following three do:
 To load the litePlay.js module into your website, simply add the following
 script tag to the main HTML page header:
 
-```
+```html
 <script  src="https://g-ubimus.github.io/litePlay.js/litePlay.constants.js"></script>
 ```
 
 When the page is loaded, you will have access to various system constants, as
 well as the following function:
 
-```
+```javascript
 lpRun();
 ```
 
@@ -69,7 +69,7 @@ Alternatively, a function `f()` can be used as the starting point of the
 litePlay.js application. Or it can simply contain all the code that is to be
 executed when the script is run:
 
-```
+```javascript
 function f() {
  // we start executing from here ...
 }

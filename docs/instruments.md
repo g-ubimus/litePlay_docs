@@ -13,7 +13,7 @@ name or their individual numbers.
 ## Struck
 Pitched sounds create by striking something like a string, bar, etc:
 
-```
+```javascript
 grandPiano
 piano = grandPiano
 brightPiano
@@ -37,7 +37,7 @@ tinkleBell
 ## Sustained
 Pitched sounds created by sustaining tones:
 
-```
+```javascript
 drawbarOrgan
 percussiveOrgan
 rockOrgan
@@ -52,7 +52,7 @@ tangoAccordion
 ## Plucked
 Pitched sounds created by plucking strings:
 
-```
+```javascript
 nylonAcousticGuitar
 guitar = nylonAcousticGuitar
 steelAcousticGuitar
@@ -75,7 +75,7 @@ harp = orchestralHarp
 ## Bass
 Various types of pitched sounds for the bass range:
 
-```
+```javascript
 acousticBass
 fingerElectricBass
 pickElectricBass
@@ -90,7 +90,7 @@ synthBass2
 ## Bowed
 Pitched sounds created by bowing strings:
 
-```
+```javascript
  violin
  viola
  cello
@@ -101,7 +101,7 @@ Pitched sounds created by bowing strings:
 ## Ensemble
 Ensemble-like pitched sounds:
 
-```
+```javascript
  stringEnsemble1
  strings = stringEnsemble1
  stringEnsemble2
@@ -112,7 +112,7 @@ Ensemble-like pitched sounds:
 ## Voice
 Pitched sounds created through singing:
 
-```
+```javascript
  choirAahs
  voiceOohs
  synthVoice
@@ -121,7 +121,7 @@ Pitched sounds created through singing:
 ## Blow
 Pitched sounds created by blowing on a open mouthpiece connected to a pipe:
 
-```
+```javascript
  trumpet
  trombone
  tuba
@@ -137,7 +137,7 @@ Pitched sounds created by blowing on a open mouthpiece connected to a pipe:
 ## Wind
 Pitched sounds created by blowing on different types of reeds:
 
-```
+```javascript
 sopranoSax
 altoSax
 tenorSax
@@ -159,7 +159,7 @@ ocarina
 ## Lead 
 Lead-type pitched synthesizer sounds:
 
-```
+```javascript
 lead1
 lead2
 lead3
@@ -172,7 +172,7 @@ lead8
 ## Synth
 Generic pitched synthesizer sounds:
 
-```
+```javascript
 pad1
 pad2
 pad3
@@ -187,7 +187,7 @@ pad8
 ## Effects
 Mostly dystonic effects sounds:
 
-```
+```javascript
 fx1
 fx2
 fx3
@@ -200,7 +200,7 @@ fx8
 ## Percussion
 Mostly dystonic percussion sounds:
 
-```
+```javascript
 agogo
 steelDrums
 woodblock
@@ -224,13 +224,13 @@ individually. For these, the instrument names are `drums`, `drums1`,`drums2`,
 `drums3`,  `drums4`, `drums5`, and `drums6`. The sounds can be selected via a
 _what_ attribute, for example:
 
-```
+```javascript
 drums.play(kick)
 ```
 
 The complete list of drums sounds is as follows:
 
-```
+```javascript
 djScratch = 29
 acousticBassDrum = 35
 kick = acousticBassDrum

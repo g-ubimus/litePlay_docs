@@ -13,7 +13,7 @@ acessados por seus nomes ou por seus números individuais.
 ## Teclas
 Sons afinados criados ao percutir algo como uma corda, barra, etc:
 
-```
+```javascript
 grandPiano
 piano = grandPiano
 brightPiano
@@ -37,7 +37,7 @@ tinkleBell
 ## Sustentados
 Sons afinados criados através da sustentação de tons:
 
-```
+```javascript
 drawbarOrgan
 percussiveOrgan
 rockOrgan
@@ -52,7 +52,7 @@ tangoAccordion
 ## Dedilhados
 Sons afinados criados ao dedilhar ou puxar cordas:
 
-```
+```javascript
 nylonAcousticGuitar
 guitar = nylonAcousticGuitar
 steelAcousticGuitar
@@ -75,7 +75,7 @@ harp = orchestralHarp
 ## Baixo
 Vários tipos de sons afinados para a região dos graves:
 
-```
+```javascript
 acousticBass
 fingerElectricBass
 pickElectricBass
@@ -90,7 +90,7 @@ synthBass2
 ## Friccionados/Arco
 Sons afinados criados ao passar o arco em cordas:
 
-```
+```javascript
 violin
 viola
 cello
@@ -101,7 +101,7 @@ tremoloStrings
 ## Conjunto
 Sons afinados semelhantes aos de um conjunto ou orquestra:
 
-```
+```javascript
 stringEnsemble1
 strings = stringEnsemble1
 stringEnsemble2
@@ -112,7 +112,7 @@ synthStrings2
 ## Voz
 Sons afinados criados através do canto:
 
-```
+```javascript
 choirAahs
 voiceOohs
 synthVoice
@@ -121,7 +121,7 @@ synthVoice
 ## Metais
 Sons afinados criados ao soprar em um bocal aberto conectado a um tubo:
 
-```
+```javascript
 trumpet
 trombone
 tuba
@@ -137,7 +137,7 @@ synthBrass2
 ## Palhetas
 Sons afinados criados ao soprar em diferentes tipos de palhetas:
 
-```
+```javascript
 sopranoSax
 altoSax
 tenorSax
@@ -160,7 +160,7 @@ ocarina
 Sons de sintetizador afinados do tipo lead (solo):
 
 
-```
+```javascript
 lead1
 lead2
 lead3
@@ -174,7 +174,7 @@ lead8
 ## Sintetizador
 Sons genéricos afinados de sintetizador:
 
-```
+```javascript
 pad1
 pad2
 pad3
@@ -189,7 +189,7 @@ pad8
 ## Efeitos
 Principalmente sons de efeitos distônicos:
 
-```
+```javascript
 fx1
 fx2
 fx3
@@ -203,7 +203,7 @@ fx8
 ## Percussão
 Principalmente sons de percussão distônicos:
 
-```
+```javascript
 agogo
 steelDrums
 woodblock
@@ -227,13 +227,13 @@ ser selecionados individualmente. Para estes, os nomes dos instrumentos são
 `drums`, `drums1`,`drums2`, `drums3`, `drums4`, `drums5` e `drums6`. Os sons
 podem ser selecionados através de um atributo _what_ (o que), por exemplo:
 
-```
+```javascript
 drums.play(kick)
 ```
 
 A lista completa de sons de bateria é a seguinte:
 
-```
+```javascript
 djScratch = 29
 acousticBassDrum = 35
 kick = acousticBassDrum

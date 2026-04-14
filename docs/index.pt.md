@@ -51,14 +51,14 @@ Nem todos os ambientes cumprem com isso. Os três a seguir sim:
 Para carregar o módulo litePlay.js em seu site, basta adicionar a seguinte tag
 de script ao cabeçalho da página HTML principal:
 
-```
+```html
 <script  src="https://g-ubimus.github.io/litePlay.js/litePlay.constants.js"></script>
 ```
 
 Quando a página for carregada, você terá acesso a várias constantes do sistema,
 bem como à seguinte função:
 
-```
+```javascript
 lpRun();
 ```
 
@@ -68,7 +68,7 @@ Alternativamente, uma função `f()` pode ser usada como ponto de partida da
 aplicação litePlay.js. Ou pode conter todo o código que deve ser executado
 quando o script for rodado:
 
-```
+```javascript
 function f() {
  // Código a ser executado aqui
 }
@@ -78,6 +78,6 @@ lpRun(f);
 Uma vez que o motor litePlay.js esteja rodando, podemos usar sua funcionalidade
 em qualquer lugar prefixando suas funções etc com `lp.`, por exemplo:
 
-```
+```javascript
 lp.play();
 ```
