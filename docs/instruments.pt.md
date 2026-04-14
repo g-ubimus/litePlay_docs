@@ -14,146 +14,143 @@ acessados por seus nomes ou por seus números individuais.
 Sons afinados criados ao percutir algo como uma corda, barra, etc:
 
 ```javascript
-grandPiano
-piano = grandPiano
-brightPiano
-electricGrand
-honkyPiano
-electricPiano
-electricPiano2
-harpsichord
-clavinet
-celesta
-glockenspiel
-musicBox
-vibraphone
-marimba
-xylophone
-tubularBells
-dulcimer
-tinkleBell
+pianoDeCauda
+pianoBrilhante
+deCaudaElétrico
+pianoRachado
+pianoElétrico
+pianoElétrico2
+cravo
+clavinete
+cravoElétrico
+caixaDeMúsica
+vibrafone
+xilofone
+carrilhão
+sininho
+sino
+
 ```
 
 ## Sustentados
 Sons afinados criados através da sustentação de tons:
 
 ```javascript
-drawbarOrgan
-percussiveOrgan
-rockOrgan
-organ = rockOrgan
-churchOrgan
-reedOrgan
-accordion
-harmonic
-tangoAccordion
+órgãoElétrico
+órgãoPercussivo
+órgãoDeRock
+órgão
+órgãoLitúrgico
+órgãoDePalhetas
+acordeão
+gaita
+acordeãoDeTango
 ```
 
 ## Dedilhados
 Sons afinados criados ao dedilhar ou puxar cordas:
 
 ```javascript
-nylonAcousticGuitar
-guitar = nylonAcousticGuitar
-steelAcousticGuitar
-jazzElectricGuitar
-clearElectricGuitar
-mutedElectricGuitar
-overdrivenGuitar
-distortionGuitar
-guitarHarmonics
-sitar
-banjo
-shamisen
-koto
-kalimba
-pizzicatoStrings
-orchestralHarp
-harp = orchestralHarp
+violão
+vilãoDeNáilon
+violãoDeAço
+guitarraDeJazz
+guitarraLimpa
+guitarraAbafada
+guitarraOverdrive
+guitarraDistorcida
+guitarraHarmônicos
+samisém
+cordasPizzicato
+harpaOrquestral
+harpa
 ```
 
 ## Baixo
 Vários tipos de sons afinados para a região dos graves:
 
 ```javascript
-acousticBass
-fingerElectricBass
-pickElectricBass
-fretlessBass
-bass = fretlessBass
-slapBass1
-slapBass2
-synthBass1
-synthBass2
+baixoAcústico
+baixoElétrico
+baixoElétricoPalhetado
+baixoFretless
+baixo
+baixoSlap1
+baixoSlap2
+baixoSintetizado1
+baixoSintetizado2
 ```
 
 ## Friccionados/Arco
 Sons afinados criados ao passar o arco em cordas:
 
 ```javascript
-violin
-viola
-cello
-contrabass
-tremoloStrings
+violino
+violoncelo
+celo
+contrabaixo
+cordasTremolo
 ```
 
 ## Conjunto
 Sons afinados semelhantes aos de um conjunto ou orquestra:
 
 ```javascript
-stringEnsemble1
-strings = stringEnsemble1
-stringEnsemble2
-synthStrings1
-synthStrings2
+cordas
+cordas2
+cordasSintetizadas1
+cordasSintetizadas2
+golpeOrquestral
+golpe
 ```
 
 ## Voz
 Sons afinados criados através do canto:
 
 ```javascript
-choirAahs
-voiceOohs
-synthVoice
+coralAahs
+coralOohs
+vozSintetizada
 ```
 
 ## Metais
 Sons afinados criados ao soprar em um bocal aberto conectado a um tubo:
 
 ```javascript
-trumpet
-trombone
-tuba
-mutedTrumpet
-frenchHorn
-horn = frenchHorn
-brassSection
-brass = brassSection
-synthBrass1
-synthBrass2
+trompete
+trompeteAbafado
+trompeteComSurdina
+trompaFrancesa
+trompa
+seçãoDeMetais
+metais
+metalSintetizado1
+metalSintetizado2
 ```
 
 ## Palhetas
 Sons afinados criados ao soprar em diferentes tipos de palhetas:
 
 ```javascript
-sopranoSax
-altoSax
-tenorSax
-baritoneSax
-oboe
-englishHorn
-bassoon
-clarinet
-piccolo
-flute
-recorder
-panFlute
-blownBottle
-shakuhachi
-whistle
-ocarina
+saxSoprando
+saxAlto
+saxTenor
+saxBarítono
+oboé
+corneInglês
+fagote
+clarineta
+clarinete
+pícolo
+flautaTransversal
+flauta
+flautaDoce
+flautaDePã
+garrafaSoprada
+garrafa
+assobio
+assovio
+gaitaDeFole
 ```
 
 ## Solo
@@ -190,41 +187,44 @@ pad8
 Principalmente sons de efeitos distônicos:
 
 ```javascript
-fx1
-fx2
-fx3
-fx4
-fx5
-fx6
-fx7
-fx8
+efeito1
+efeito2
+efeito3
+efeito4
+efeito5
+efeito6
+efeito7
+efeito8
 ```
 
 ## Percussão
 Principalmente sons de percussão distônicos:
 
 ```javascript
-agogo
-steelDrums
-woodblock
-taikoDrum
-melodicTom
-synthDrum
-reverseCymbal
-guitarFretNoise
-breathNoise
-seaShore
-birdTweet
-telephoneRing
-helicopter
-applause
-gunshot
+agogô
+tamborDeAço
+blocoDeMadeira
+bloco
+taiko
+tomTom
+bateriaSintetizada
+pratoReverso
+trasteDeGuitarra
+traste
+respiração
+ondaDoMar
+pássaro
+telefone
+helicóptero
+aplausos
+tiro
+tímpano
 ```
 
 ## Bateria
 Kits de bateria/percussão sem altura definida, com sons específicos que podem
 ser selecionados individualmente. Para estes, os nomes dos instrumentos são
-`drums`, `drums1`,`drums2`, `drums3`, `drums4`, `drums5` e `drums6`. Os sons
+`bateria`, `bateria2`,`bateria3`, `bateria4`, `bateria5` e `bateria6`. Os sons
 podem ser selecionados através de um atributo _what_ (o que), por exemplo:
 
 ```javascript
