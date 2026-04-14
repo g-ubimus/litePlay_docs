@@ -1,5 +1,5 @@
 site_name: litePlay.js
-site_url: https://g-ubimus.github.io/litePlay_docs/
+site_url: https://g-ubimus.github.io/litePlay.docs/
 theme:
   name: material
   palette:
@@ -19,15 +19,6 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
-
-extra:
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
-    - name: Portuguese 
-      link: /pt/
-      lang: pt-BR 
 
 plugins:
   - search

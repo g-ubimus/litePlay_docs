@@ -1,4 +1,4 @@
-# `play()`
+# `toque()`
 
 No núcleo do litePlay.js temos o `play()`. Ele pode ser simplesmente executado
 como
