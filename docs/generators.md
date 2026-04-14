@@ -106,7 +106,7 @@ For context, an example combining everything we learned here:
 play([midPitch, soft, now, shortDur, onPerc])
 ```
 
-Warning: notice that _sustained_ sounds will play forever if not called with a especified duration!
+Warning: notice that _sustained_ sounds will play forever if not called with an specified duration!
 
 ```
 play(onSus)
