@@ -1,45 +1,35 @@
 # litePlay.js docs
-litePlay.js docs are build using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+litePlay.js docs are build using [Zensical](https://github.com/zensical/zensical).
 
 Steps to build it:
 
-1. Clone the repo:
+1. Clone the repo, create a virtualenv and activate it:
 
 ```
 git clone git@github.com:g-ubimus/litePlay.docs.git
-```
-
-2. Create a python virtual environment:
-
-```
 python -m venv venv
-```
-
-3. Activate the virtualenv:
- 
-```
 source venv/bin/activate
 ```
 
-4. Install material:
+2. Install zensical:
 
 ```
 pip install -r requirements.txt
 ```
 
-5. Build the docs:
+3. Build the docs:
 
 ```
-mkdocs build
+zensical build
 ```
 
-6. Access them with:
+4. Access them with:
 
 ```
-mkdocs serve 
+zensical serve 
 ```
 
-7. Be sure to deactivate the environment when finished:
+5. Be sure to deactivate the environment when finished:
  
 ```
 deactivate
