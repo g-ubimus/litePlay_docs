@@ -43,8 +43,8 @@ toggle.name = "Switch to light mode"
 
 [project.extra]
 alternate = [
-    { name = "English", link = "/en/", lang = "en" },
-    { name = "Português", link = "/pt/", lang = "pt-BR" }
+    { name = "English", link = "/litePlay.docs/", lang = "en" },
+    { name = "Português", link = "/litePlay.docs/pt/", lang = "pt-BR" }
 ]
 
 [project.markdown_extensions.toc]
