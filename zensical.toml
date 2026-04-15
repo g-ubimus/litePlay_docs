@@ -1,0 +1,56 @@
+[project]
+site_name = "litePlay.js docs"
+site_url = "https://g-ubimus.github.io/litePlay.docs/"
+repo_url = "https://github.com/g-ubimus/litePlay.js"
+site_description = "Documentation for the litePlay.js lite coding library."
+site_author = "g-ubimus"
+docs_dir = "docs"
+site_dir = "site"
+nav = [
+  {"Getting started" = "index.md"},
+  {"play()" = "play.md"},
+  {"eventList class" = "eventList.md"},
+  {"instruments()" = "instruments.md"},
+  {"Generators" = "generators.md"},
+  {"litePlay.js" = "https://g-ubimus.github.io/litePlay.js"}
+]
+
+[project.theme]
+variant = "modern"
+features = [
+    "navigation.expand",
+    "toc.follow",
+    "toc.integrate",
+    "content.code.copy"
+]
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+primary = "green"
+accent = "light green"
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+primary = "green"
+accent = "light green"
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.extra]
+alternate = [
+    { name = "English", link = "/en/", lang = "en" },
+    { name = "Português", link = "/pt/", lang = "pt-BR" }
+]
+
+[project.markdown_extensions.toc]
+permalink = true
+toc_depth = 2
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+[project.markdown_extensions.pymdownx.superfences]

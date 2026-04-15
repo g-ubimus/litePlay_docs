@@ -1,4 +1,4 @@
-# Bem-vindo! 
+# Começando
 
 ## O que é o litePlay.js?
 O litePlay.js é um módulo JavaScript (JS) para codificação leve (*lite coding*)

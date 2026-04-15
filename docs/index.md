@@ -1,4 +1,4 @@
-# Welcome! 
+# Getting started 
 ## What is litePlay.js?
 litePlay.js is a JavaScript (JS) module for music lite coding. It can be used
 in any web applications, but typically we anticipate it to be helpful for
