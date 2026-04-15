@@ -1,4 +1,4 @@
-# litePlay.js docs
+# litePlay.js documentation
 litePlay.js docs are built using [Zensical](https://github.com/zensical/zensical).
 
 Steps to build it:
